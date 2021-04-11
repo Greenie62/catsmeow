@@ -67,7 +67,7 @@ body{
     border-bottom: 60px solid transparent;
     border-left: 60px solid var(--primary-color);
     transform:rotate(17deg);
-    margin-left:35px;
+    margin-left:25px;
 
 }
 
@@ -91,7 +91,7 @@ body{
     border-left: 60px solid var(--primary-color);
 
     transform:rotate(80deg);
-    left:60%;
+    left:55%;
     top:20px;
 
 }
@@ -201,6 +201,7 @@ body{
 
 .nose{
     background:black;
+    z-index:3;
 }
 
 
@@ -244,6 +245,7 @@ body{
     position:absolute;
     top:-200%;
     left:100%;
+    z-index:2;
 }
 
 
