@@ -308,6 +308,10 @@ body{
     display:flex;
 }
 
+.back{
+    top:-10px;
+}
+
 
 .paw{
     width:30px;
