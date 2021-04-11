@@ -1,0 +1,317 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    position:relative;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+:root{
+    --primary-color:rgb(202, 136, 13);
+}
+
+
+h1{
+    font-size:45px;
+    letter-spacing:2px;
+    opacity:0;
+    transition:1s ease;
+}
+
+
+body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction:column;
+    background:yellow;
+}
+
+.cat-container{
+    height:65%;
+    width:85%;
+    /* border:1px solid black; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+    overflow:hidden;
+    background:white;
+    z-index:-5;
+}
+
+
+.ears{
+    position:relative;
+    width:100%;
+    height:10%;
+    top:-15px;
+    /* border:1px solid black; */
+ 
+}
+
+
+.ear1, .ear2{
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.ear1{
+    width: 0; 
+    height: 0; 
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid var(--primary-color);
+    transform:rotate(17deg);
+    margin-left:35px;
+
+}
+
+
+.smallear1{
+    width: 0; 
+    height: 0; 
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid black;
+    transform:rotate(0deg);
+    left:-45px;
+    top:25px;
+}
+
+.ear2{
+    width: 0; 
+    height: 0; 
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid var(--primary-color);
+
+    transform:rotate(80deg);
+    left:60%;
+    top:20px;
+
+}
+
+.smallear2{
+    width: 0; 
+    height: 0; 
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid black;
+    transform:rotate(0deg);
+    left:-40px;
+    top:10px;
+ 
+}
+
+
+.whiskerNose{
+    width:95%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.whiskers{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+
+
+ .whisker{
+    width:100px;
+    height:2px;
+    background:lightgray;
+    margin:0px 0px;
+}
+
+.whiskers1 .whisker1{
+    transform-origin:right;
+    transform:rotate(5deg)
+}
+
+.whiskers1 .whisker3{
+    transform-origin:right;
+    transform:rotate(-5deg)
+}
+
+.whiskers2 .whisker1{
+    transform-origin:left;
+    transform:rotate(-5deg)
+}
+
+.whiskers2 .whisker3{
+    transform-origin:left;
+    transform:rotate(5deg)
+}
+
+
+.whiskers{
+    height:40px;
+    width:70px;
+    /* border:1px solid red; */
+}
+
+
+.head, .body{
+    border-radius:100%;
+    width:75%;
+    height:45%;
+    /* border:2px solid black; */
+    margin:0 auto;
+    background:var(--primary-color);
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction:column;
+    z-index:5;
+}
+
+.eyes{
+    width:65%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+
+.eye, .nose{
+    border-radius:50%;
+    width:50px;
+    height:30px;
+    background:white;
+}
+
+.pupil{
+    border-radius:50%;
+    background:black;
+    width:20px;
+    height:20px;
+    transition:1s ease;
+    left:-5px;
+    transition:.2s ease;
+}
+
+.nose{
+    background:black;
+}
+
+
+.mouth{
+    border-radius:50%;
+    width:35%;
+    height:20px;
+    background:black;
+    transition:1s ease;
+}
+
+.close{
+    height:2px;
+}
+
+
+.glasses-box{
+    width:85%;
+    height:20%;
+    border-top:4px solid red;
+    position:absolute;
+    top:55px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+
+.ear-spec{
+    height:60px;
+    width:4px; 
+    background:red;
+    position:absolute;
+    top:-150%;
+}
+
+.ear-spec2{
+    height:60px;
+    width:4px; 
+    background:red;
+    position:absolute;
+    top:-150%;
+    left:100%;
+}
+
+
+.eyepiece{
+    border-radius:50%;
+    border:5px solid red;
+    height:85px;
+    width:85px;
+    background:white;
+    /* z-index:1; */
+}
+
+.tint{
+    z-index:1;
+    background:silver;
+    /* height:100%; */
+    height:0%;
+    transition:3s ease;
+    border-radius:50%;
+}
+
+.full-tint{
+    height:100%;
+}
+
+
+.eyepiece2{
+    border-radius:50%;
+    border:5px solid red;
+    height:85px;
+    width:85px;
+    left:-95px;
+    top:35px;
+    background:white;
+}
+
+
+
+.body{
+    position:absolute;
+    top:50%;
+    left:20%;
+    width:90%;
+    z-index:1;
+}
+
+
+.paws{
+    width:50%;
+    left:25%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    /* background:red; */
+    top:100px;
+  
+}
+
+.flex{
+    display:flex;
+}
+
+
+.paw{
+    width:30px;
+    height:60px;
+    border-radius:100px;
+    background:var(--primary-color);
+    z-index:-1;
+    position:relative;
+}
